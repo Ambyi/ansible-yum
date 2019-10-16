@@ -1,6 +1,6 @@
 ---
 
-- name: update | Check if first boot file exists
+# - name: update | Check if first boot file exists
 - stat:
     path: "{{ yum_upgrade_now_first_boot_file }}"
   register: yum_first_boot_stat
